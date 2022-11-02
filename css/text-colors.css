@@ -1,0 +1,19 @@
+.text-light-blue {
+  color: #0091ea;
+}
+
+.text-maroon {
+  color: #800000;
+}
+
+.text-dark-blue {
+  color: #191970;
+}
+
+.text-red {
+  color: #dc143c;
+}
+
+a:hover, .text-indigo {
+  color: #4b0082;
+}

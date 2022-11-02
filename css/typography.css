@@ -1,0 +1,134 @@
+html {
+  /* 
+    Set root font-size to be 10px (based on browser default size of 16px)
+    This makes it simpler to work with rem units:
+    (i.e. 1.6 rem is equal to 16px, 2.4rem is equal to 24px)
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 3.0rem;
+  }
+
+  header h1 span {
+    font-size: 1.8rem;
+  }
+
+  header h1 div {
+    font-size: 1.6rem;
+    margin-top: -17px;
+  }
+
+  nav li {
+    font-size: 1.4rem;
+  }
+
+  .disclaimer {
+    font-size: 1rem;
+  }
+
+  .copy-right {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  header h1 {
+    font-size: 4.2rem;
+  }
+
+  header h1 span {
+    font-size: 2.8rem;
+  }
+
+  header h1 div {
+    font-size: 2.6rem;
+    margin-top: -27px;
+  }
+
+  nav li {
+    font-size: 1.4rem;
+  }
+
+  aside {
+    font-size: 1.6rem;
+  }
+
+  section h1 {
+    font-size: 3rem;
+  }
+
+  section h2 {
+    font-size: 2.4rem;
+  }
+
+  .call-to-action,
+  .call-to-action h2 {
+    font-size: 2rem;
+  }
+
+  .copy-right {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 6.6rem;
+  }
+
+  header h1 span {
+    font-size: 4.2rem;
+  }
+
+  header h1 div {
+    font-size: 3.8rem;
+    margin-top: -42px;
+  }
+
+  nav li {
+    font-size: 1.6rem;
+  }
+}
+
+header h1 {
+  font-family: Georgia, serif;
+}
+
+section h1,
+.quimbys-restored {
+  font-family: Times, serif;
+}
+
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+form,
+p,
+small,
+aside,
+ul,
+footer,
+.founders-role,
+.call-to-action,
+.img-info-container h3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.call-to-action h2 small {
+  font-size: 65%;
+}

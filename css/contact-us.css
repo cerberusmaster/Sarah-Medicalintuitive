@@ -1,0 +1,55 @@
+.contact-form, .stretch {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contact-form input {
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.stretch {
+  flex-wrap: wrap;
+}
+
+.stretch.occupation-container input:first-child {
+  flex: 2;
+}
+
+.stretch input, .stretch button {
+  flex: 1;
+}
+
+.stretch button {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+/* .number-format {
+  margin-top: -10px;
+} */
+
+.check-spam {
+  text-align: center;
+}

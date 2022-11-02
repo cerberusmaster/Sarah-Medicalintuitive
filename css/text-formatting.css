@@ -1,0 +1,32 @@
+.center {
+  text-align: center;
+}
+
+.call-to-action {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-seperator {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.section-seperator span {
+  position: relative;
+  bottom: 1px;
+}
+
+.sub-section-header {
+  width: 70%;
+  margin: auto;
+}
+
+section.indent-paragraphs p:not(.no-indent) {
+  text-indent: 35px;
+}
+
+.no-margin {
+  margin: -20px;
+}

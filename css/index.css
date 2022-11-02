@@ -1,0 +1,255 @@
+/* --- RESETS --- */
+body,
+ul,
+figure {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .section-links-container {
+    justify-content: center;
+  }
+
+  .content-container {
+    padding: 15px 0;
+    grid-template-rows: 1fr;
+  }
+
+  nav li {
+    margin: 2px 0;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .section-links-container {
+    justify-content: center;
+  }
+
+  header {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  aside.figures-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav li:not(li:last-child) {
+    border-right: 1px solid black;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .section-links-container {
+    justify-content: flex-start;
+  }
+
+  .section-links {
+    position: relative;
+    left: 30px;
+  }
+
+  aside.figures-container {
+    padding-left: 40px;
+  }
+
+  aside {
+    display: block;
+    height: 600px;
+    position: sticky;
+    min-width: 166px;
+  }
+
+  aside.figures-container,
+  aside.figures-container figure {
+    display: flex;
+  }
+
+  aside.figures-container figure {
+    margin-bottom: 30px;
+  }
+
+  aside.figures-container,
+  aside.figures-container figure {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside.figures-container img {
+    margin-bottom: 5px;
+    width: 85%;
+    min-width: 130px;
+    height: auto;
+    filter: grayscale(100%);
+  }
+
+  aside.figures-container figcaption {
+    width: 168px;
+  }
+}
+
+@media screen and (max-width: 1104px) {
+  .quimby-photos-container,
+  .quimby-photos-container figcaption,
+  .quimby-photos-container img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1105px) {
+  .quimby-photos-container {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    justify-content: space-around;
+  }
+
+  .quimby-photos-container img {
+    height: 250px;
+    width: auto;
+  }
+}
+
+
+/* --- GLOBAL --- */
+nav ul,
+aside,
+header,
+footer {
+  text-align: center;
+}
+
+footer,
+.footer-content {
+  margin: auto;
+}
+
+header,
+.section-links-container,
+nav {
+  display: flex;
+}
+
+/* --- HEADER --- */
+header {
+  flex-direction: column;
+}
+
+header h1 {
+  display: inline-block;
+  align-self: flex-start;
+}
+
+/* --- NAVIGATION --- */
+nav {
+  align-self: flex-end;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --- MAIN CONTENT --- */
+.content-container {
+  display: grid;
+}
+
+.section-links {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#medical-intuitives {
+  margin-top: 40px;
+}
+
+#free-appointment {
+  margin-top: 30px;
+}
+
+.quotes-of-interest li {
+  margin: 15px 0;
+}
+
+/* --- SIDE PANELS --- */
+aside {
+  padding: 0 20px;
+  top: 50px;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+aside.hours-container > div,
+.logo {
+  margin-bottom: 20px;
+}
+
+.phone-number {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
+}
+
+.phone-number a {
+  text-decoration: none;
+}
+
+/* --- FOOTER --- */
+footer {
+  width: 70%;
+  padding: 20px;
+}
+
+footer nav {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.page-number {
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  margin: 20px 0;
+}
+
+.disclaimer {
+  text-align: left;
+  padding: 0 15px;
+}
+
+.copy-right {
+  float: right;
+  margin: 20px 0;
+}

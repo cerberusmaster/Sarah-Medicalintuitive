@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Contact Sarah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/others.css" />
+  <link rel="stylesheet" href="css/contact-us.css" />
+  <link rel="stylesheet" href="css/text-formatting.css" />
+  <link rel="stylesheet" href="css/text-colors.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="text-maroon">Medical Intuitives<span>.com</span>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.medicalintuitives.com/index.html">HOME</a></li>
+        <li><a href="https://www.medicalintuitives.com/quimby.html">QUIMBY'S METHOD</a></li>
+        <li><a href="https://www.medicalintuitives.com/testimonials.html">TESTIMONIALS</a></li>
+        <li><a class="text-light-blue">CONTACT SARAH</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content-container">
+    <aside class="figures-container">
+      <figure>
+        <img alt="Sarah Meredith" src="assets/sarah-meredith.png" />
+        <figcaption><strong>Sarah Meredith</strong><br />
+          Medical Intuitive Mentor
+          <span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+          Healer Alternative Health Care
+        </figcaption>
+      </figure>
+      <figure>
+        <img alt="Jessica Meredith" src="assets/jessica-meredith.png" />
+        <figcaption><strong>Jessica Meredith</strong><br />
+          Medical Intuitive Mentor
+          <span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+          Healer <br /> Life Coach
+        </figcaption>
+      </figure>
+    </aside>
+    <section>
+      <h1 class="center text-maroon">Contact Sarah</h1>
+      <h3 class="center">Contact Sarah for a <br />Free Medical Intuitive Consultation</h3>
+
+      <form class="contact-form" id="contact-form" method="POST">
+        <div class="stretch">
+          <input name="fname" placeholder="First Name" required type="text" />
+          <input name="lname" placeholder="Last Name" required type="text" />
+        </div>
+
+        <input name="phone" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" placeholder="Phone" required
+          type="text" />
+        <small class="number-format">Please use this format: <a href="tel:(123) 456-7890">(123) 456-7890</a></small>
+
+        <div>
+          <span>Time Zone</span>
+          <input name="timezone" required type="radio" value="PST" /> <label for="PST">PST</label>
+          <input name="timezone" required type="radio" value="MST" /> <label for="MST">MST</label>
+          <input name="timezone" required type="radio" value="CST" /> <label for="CST">CST</label>
+          <input name="timezone" required type="radio" value="EST" /> <label for="EST">EST</label>
+          <input name="timezone" required type="radio" value="HST" /> <label for="HST">HST</label>
+          <input name="timezone" required type="radio" value="OTHER" /> <label for="OTHER">OTHER</label>
+        </div>
+
+
+        <input name="address1" placeholder="Mailing Address" required type="text" />
+        <input name="address2" placeholder="Address 2 (Optional)" type="text" />
+
+        <div class="stretch">
+          <input name="city" placeholder="City" required type="text" />
+          <input name="state" placeholder="State" required type="text" />
+          <input name="zipcode" placeholder="Zip Code" required type="text" />
+          <input name="country" placeholder="Country" required type="text" />
+        </div>
+
+        <input name="email" placeholder="Email Address" required type="email" />
+
+        <div class="stretch occupation-container">
+          <input name="occupation" placeholder="Occupation" required type="text" />
+          <input name="years" placeholder="Years" required type="text" />
+        </div>
+
+        <div class="stretch">
+          <input name="age" placeholder="Age" required type="text" />
+          <input name="height" placeholder="Height" required type="text" />
+          <input name="weight" placeholder="Weight" required type="text" />
+        </div>
+
+        <div>
+          <span>Gender:</span>
+          <input name="gender" required type="radio" value="M" />
+          <label for="male">Male</label>
+          <input name="gender" required type="radio" value="Female" /> <label for="F">Female</label>
+        </div>
+
+        <div>
+          <span>Subject to Seizures?</span>
+          <input name="seizures" required type="radio" value="Yes" /> <label for="seizures">Yes</label>
+          <input name="seizures" required type="radio" value="No" />
+          <label for="seizures">No</label>
+        </div>
+
+        <div>
+          <span>Have You Had a Diagnosis?</span>
+          <input id="diagnosisYes" name="diagnosis" required onclick="javascript:checkDiagnosis();" type="radio"
+            value="Yes" />
+          <label for="diagnosis">Yes</label>
+          <input name="diagnosis" required onclick="javascript:checkDiagnosis();" type="radio" value="No" />
+          <label for="diagnosis">No</label>
+        </div>
+
+        <textarea id="diagnosisMsg" style="display: none;" name="diagnosisMsg" placeholder="If Yes, list diagnosis"
+          rows="5"></textarea>
+
+        <p>
+          Sarah tunes-in to your symptoms or situation. The more you share about your symptoms &amp;/or situation, the
+          more information she will be able to give you during your call.
+        </p>
+
+        <textarea name="symptoms" placeholder="Tell Sarah Your Symptoms or Situation" required rows="10"></textarea>
+
+        <p>
+        <div class="text-red check-spam">
+          *** CHECK YOUR SPAM FOLDER IF YOU HAVEN'T RECEIVED*** <br />
+          *** AN EMAIL FROM SARAH IN 24 HOURS ***
+        </div>
+
+        Usually within 48 hours you will have received an email directly from Sarah with information about scheduling
+        your free consultation. You will be asked to call the number on the email to schedule. To eliminate phone-tag,
+        please call during her regular office hours. Her hours are shown above on the right hand side of this page.
+        </p>
+
+        <div>
+          <small class="text-red">* All Fields Are Required.</small>
+        </div>
+
+        <div class="stretch">
+          <button class="submit-btn" type="submit">Submit</button>
+          <button class="reset-btn" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    <aside class="hours-container">
+      <img class="logo" src="assets/logo.png" alt="logo" />
+      <div class="text-dark-blue"><strong>HOURS BY APPOINTMENT</strong></div>
+      <div>
+        <div><b>9:00am - 4:00pm EST</b></div>
+        <div>MON TUES WED</div>
+      </div>
+      <div>
+        <div><b>9:00am - Noon EST</b></div>
+        <div>THURSDAY</div>
+      </div>
+      <div>
+        <div>Closed for Lunch</div>
+        <div>Noon to 1:00pm</div>
+      </div>
+      <div class="phone-number">
+        <a href="tel:(123) 456-7890" class="text-light-blue">
+          <strong>(321) 401-4763</strong>
+        </a>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="page-number">- - - 3 - - -</div>
+      <div class="footer-address">
+        <div><strong>Sarah Meredith & Jessica Meredith</strong></div>
+        <div><strong>Medical Intuitives & Distance Healers</strong></div>
+        <div>8114 Sun Palm Drive - Kissimmee, FL 34747</div>
+        <div><strong>(321) 401-4763</strong></div>
+      </div>
+      <p class="disclaimer">
+        **Disclaimer: Results may vary from person to person. Neither Sarah Meredith nor Jessica Meredith
+        are doctors. They claim no formal training in psychology or medicine. Neither diagnose or treat disease.
+        They discovered and developed their own healing methods. Neither holds a special license in any field.
+        Both offer their services based solely on what they see and feel through their intuitive mind which is
+        their ability to gain immediate understanding without conscious reasoning. They make no verbal or written
+        warranty on the effectiveness of their work. Using their services does not replace or substitute for medical
+        service.
+      </p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://www.medicalintuitives.com/index.html">HOME</a></li>
+        <li><a href="https://www.medicalintuitives.com/quimby.html">QUIMBY'S METHOD</a></li>
+        <li><a href="https://www.medicalintuitives.com/testimonials.html">TESTIMONIALS</a></li>
+        <li><a class="text-light-blue">CONTACT SARAH</a></li>
+      </ul>
+    </nav>
+    <p class="copy-right">&copy; 2022 Sarah Meredith & Jessica Meredith All rights reserved</p>
+  </footer>
+  <script>
+    function checkDiagnosis() {
+      let el = document.getElementById('diagnosisYes');
+      let diagnosisMsg = document.getElementById('diagnosisMsg');
+
+      if (el.checked) {
+        diagnosisMsg.style.display = 'block';
+        diagnosisMsg.required = true;
+      } else {
+        diagnosisMsg.required = false;
+        diagnosisMsg.style.display = 'none';
+      }
+    }
+
+    const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const data = new URLSearchParams();
+      for (const pair of new FormData(contactForm)) {
+        data.append(pair[0], pair[1]);
+      }
+
+      const options = {
+        method: 'POST',
+        body: data
+      }
+
+      fetch("consultationInquiry.php", options)
+        .then(response => {
+          response.text().then(message => {
+            console.log(message);
+            alert(message);
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        })
+    });
+  </script>
+</body>
+
+</html>
