@@ -9,6 +9,14 @@ html {
 
 body {
   font-size: 1.7rem;
+  font-family: Georgia, serif !important;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -30,11 +38,11 @@ body {
   }
 
   .disclaimer {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .copy-right {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
   }
 }
 
@@ -74,13 +82,13 @@ body {
   }
 
   .copy-right {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 769px) {
   header h1 {
-    font-size: 6.6rem;
+    font-size: 6rem;
   }
 
   header h1 span {
@@ -95,10 +103,6 @@ body {
   nav li {
     font-size: 1.6rem;
   }
-}
-
-header h1 {
-  font-family: Georgia, serif;
 }
 
 section h1,

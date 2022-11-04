@@ -1,5 +1,5 @@
 .text-light-blue {
-  color: #0091ea;
+  color: #00afa0;
 }
 
 .text-maroon {
@@ -8,6 +8,10 @@
 
 .text-dark-blue {
   color: #191970;
+}
+
+.text-blue {
+  color: blue;
 }
 
 .text-red {

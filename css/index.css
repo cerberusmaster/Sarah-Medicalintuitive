@@ -1,5 +1,5 @@
 /* --- RESETS --- */
-body,
+dy,
 ul,
 figure {
   margin: 0;
@@ -71,7 +71,7 @@ figure {
 
   aside {
     display: block;
-    height: 600px;
+    /* height: 600px; */
     position: sticky;
     min-width: 166px;
   }
@@ -128,7 +128,6 @@ figure {
 
 
 /* --- GLOBAL --- */
-nav ul,
 aside,
 header,
 footer {
@@ -143,7 +142,7 @@ footer,
 header,
 .section-links-container,
 nav {
-  display: flex;
+  /*display: flex;*/
 }
 
 /* --- HEADER --- */
@@ -229,6 +228,13 @@ aside.hours-container > div,
 footer {
   width: 70%;
   padding: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  footer {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 footer nav {

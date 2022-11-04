@@ -10,17 +10,14 @@
 
 .section-seperator {
   text-align: center;
-  margin: 25px 0;
+  margin: 25px 0 25px 0;
+  font-size: 20px;
 }
 
-.section-seperator span {
-  position: relative;
-  bottom: 1px;
-}
-
-.sub-section-header {
-  width: 70%;
-  margin: auto;
+.seperator {
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-size: 20px;
 }
 
 section.indent-paragraphs p:not(.no-indent) {
