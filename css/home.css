@@ -30,14 +30,14 @@ section, .box-shadow-div {
 
 .discovery-title {
   padding: 20px 0;
-  border-bottom: 5px double #800000;
-  border-top: 5px double #800000; 
+  border-bottom: 5px double #031888;
+  border-top: 5px double #031888;
 }
 
 .totalled-truck {
   display: block;
   margin: auto;
-  border: 3px solid #800000;
+  border: 3px solid #031888;
   width: 100%;
   height: auto;
 }
@@ -46,7 +46,7 @@ section, .box-shadow-div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: 3px solid #800000;
+  border: 3px solid #031888;
   padding: 40px 20px;
   width: auto;
 }
@@ -138,7 +138,7 @@ p {
 .section-title {
   font-size: 32px;
   font-family: Georgia, serif;
-  color: #800000;
+  color: #031888;
 }
 
 .p-title {
@@ -180,7 +180,12 @@ p {
 }
 
 .header {
-  border: 2px solid #800000;
+  border: 0px solid #031888;
+  border-radius: 10px;
+  background-color: white;
+  /*box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.05) !important;*/
+  box-shadow: 1px 4px 9px 8px rgb(0 0 0 / 5%) !important;
+  padding: 30px 30px 0px 30px;
 }
 
 nmb-5 {
@@ -194,25 +199,36 @@ nmb-5 {
 }
 
 .sarah-avatar {
-  border: 4px solid #800000;
   max-width: 300px;
+  border: 3px solid #6096FD;
+  border-radius: 9px;
 }
 
 @media screen and (min-width: 769px) {
   .sarah-avatar {
-    border: 6px solid #800000;
     max-width: 250px;
+    border: 5px solid #6096FD;
+    border-radius: 9px;
   }
 }
 
 .avatar-name {
   bottom: 0px;
   font-size: 16px;
+  background-color: #6096FD;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px;
+  width: 241px;
+  vertical-align: bottom;
+  transform: translate(-50%, 0%);
+  left: 50%;
 }
 
 .click-here {
   font-size: 12px !important;
   font-weight: bold;
+  color: #aab6fb !important;
 }
 
 .w-limit {
@@ -221,7 +237,10 @@ nmb-5 {
 
 @media screen and (min-width: 769px) {
   .w-limit {
-    width: 75% !important;
+    width: 90% !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-bottom: 20px !important;
   }
 }
 
@@ -244,6 +263,13 @@ i {
 
 body {
   font-size: 14px !important;
+  /*background-color: #4d566c !important;*/
+  /*background-color: #faa7bb !important;*/
+
+  background-color: #faa7bb55 !important;
+  /*opacity: 0.7;*/
+  background-image: radial-gradient(#ffffff 0.8500000000000001px, #faa7bb 0.8500000000000001px);
+  background-size: 17px 17px;
 }
 
 .p-indent {
@@ -253,4 +279,36 @@ body {
   .p-indent {
     padding-left: 100px !important;
   }
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: Georgia, serif !important;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
+.primary-b-dark {
+  color: #031888;
+}
+
+.primary-b {
+  color: #6096FD;
+}
+
+.primary-b-light {
+  color: #aab6fb;
+}
+
+.primary-r {
+  color: #fb7b8e;
+}
+
+.primary-r-light {
+  color: #faa7bb;
 }
