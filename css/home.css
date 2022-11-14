@@ -90,30 +90,15 @@ h2 {
 }
 
 p {
-  font-size: 14px;
-  text-indent: 25px;
+  font-size: 18px;
+  text-indent: 50px;
   text-align: left;
-}
-
-
-
-@media screen and (min-width: 769px) {
-  p {
-    font-size: 18px;
-    text-indent: 50px;
-    text-align: left;
-  }
 }
 
 .m-v {
   margin: 20px 0px 20px 0px !important;
 }
 
-@media screen and (min-width: 769px) {
-  .m-v {
-    margin: 20px 0px 20px 0px !important;
-  }
-}
 .margin-vertical-20 {
   margin: 20px 0px 20px 0px !important;
 }
@@ -179,37 +164,14 @@ p {
   font-size: 20px;
 }
 
-.header {
-  border: 0px solid #031888;
-  border-radius: 10px;
-  background-color: white;
-  /*box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.05) !important;*/
-  box-shadow: 1px 4px 9px 8px rgb(0 0 0 / 5%) !important;
-  padding: 30px 30px 0px 30px;
-}
-
-nmb-5 {
-  margin-bottom: 0px;
-}
-
-@media screen and (min-width: 769px) {
-  .nmb-5 {
-    margin-bottom: -50px;
-  }
+.nmb-5 {
+  margin-bottom: -50px !important;
 }
 
 .sarah-avatar {
-  max-width: 300px;
-  border: 3px solid #6096FD;
+  max-width: 250px;
+  border: 5px solid #6096FD;
   border-radius: 9px;
-}
-
-@media screen and (min-width: 769px) {
-  .sarah-avatar {
-    max-width: 250px;
-    border: 5px solid #6096FD;
-    border-radius: 9px;
-  }
 }
 
 .avatar-name {
@@ -232,16 +194,10 @@ nmb-5 {
 }
 
 .w-limit {
-  width: 100% !important;
-}
-
-@media screen and (min-width: 769px) {
-  .w-limit {
-    width: 90% !important;
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-    padding-bottom: 20px !important;
-  }
+  width: 90% !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-bottom: 20px !important;
 }
 
 i {
@@ -250,15 +206,6 @@ i {
 
 .cmb-0 {
  margin-bottom: 0px !important;
-}
-
-@media screen and (max-width: 768px){
-  nav li {
-    font-size: 16px !important;
-    display: block;
-    text-align: center;
-    padding: 5px;
-  }
 }
 
 body {
@@ -273,24 +220,11 @@ body {
 }
 
 .p-indent {
-  text-indent: unset !important;
-}
-@media screen and (min-width: 768px){
-  .p-indent {
-    padding-left: 100px !important;
-  }
+  padding-left: 100px !important;
 }
 
 body {
-  font-size: 1.7rem;
-  font-family: Georgia, serif !important;
-  padding-top: 10px;
-}
-
-@media screen and (min-width: 769px) {
-  body {
-    padding-top: 40px;
-  }
+  padding-top: 40px;
 }
 
 .primary-b-dark {
@@ -311,4 +245,109 @@ body {
 
 .primary-r-light {
   color: #faa7bb;
+}
+
+.header {
+  border: 0px solid #031888;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 4px 9px 8px rgb(0 0 0 / 5%) !important;
+  padding: 30px 30px 0px 30px;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+.desktop-only {
+  display: flex !important;
+}
+
+.plr-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.desktop-only-block {
+  display: block !important;
+}
+
+/*
+mobile responsive
+*/
+@media screen and (max-width: 768px) {
+  .desktop-only-block {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: initial !important;
+  }
+
+
+  body {
+    font-size: 1.7rem;
+    font-family: Georgia, serif !important;
+    padding-top: 10px;
+  }
+
+  .header {
+    border: 0px solid #031888;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 4px 9px 8px rgb(0 0 0 / 5%) !important;
+    padding: 0px;
+  }
+
+  .sarah-avatar {
+    max-width: 300px;
+    border: 3px solid #6096FD;
+    border-radius: 500px;
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover;
+  }
+
+  .avatar-name {
+    display: none;
+  }
+
+  .p-indent {
+    text-indent: unset !important;
+  }
+
+  .nmb-5 {
+    margin-bottom: 0px !important;
+  }
+
+  .w-limit {
+    width: 100% !important;
+    padding: 20px 20px 20px 20px !important;
+  }
+
+  nav li {
+    font-size: 16px !important;
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    text-indent: 25px;
+    text-align: left;
+  }
+
+  .m-v {
+    margin: 20px 0px 20px 0px !important;
+  }
+
+  .plr-100 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
